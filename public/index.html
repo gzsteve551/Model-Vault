@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Model Vault</title>
+<link rel="stylesheet" href="/style.css">
+<script type="importmap">
+{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"}}
+</script>
+</head>
+<body>
+<header><div class="brand">⬡ MODEL VAULT</div><span class="sub">A home for your 3D models</span></header>
+<main>
+<section class="intro"><div><p class="eyebrow">YOUR 3D LIBRARY</p><h1>Explore your models.</h1><p class="muted">Browse, preview, and upload 3D creations.</p></div>
+<div class="upload"><label for="file">Choose a model</label><input id="file" type="file" accept=".glb,.gltf,.obj,.stl"><button id="upload">Upload model</button><p id="status" role="status"></p></div></section>
+<section class="workspace"><aside><div class="section-head"><h2>Library</h2><button id="refresh" class="quiet">Refresh</button></div><div id="models" class="models">Loading models…</div></aside>
+<div class="viewer-wrap"><div class="viewer-head"><strong id="selected">Select a model</strong><span>Drag to rotate · Scroll to zoom</span></div><div id="viewer"><div class="empty">Choose a model from your library to preview it.</div></div></div></section>
+<p class="foot">Uploads are restricted to the two configured Google accounts through Cloudflare Access. Files in the GitHub storage repository are public if that repository is public.</p>
+</main>
+<script type="module" src="/app.js"></script>
+</body></html>

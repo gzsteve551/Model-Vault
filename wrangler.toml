@@ -1,0 +1,14 @@
+name = "model-vault"
+main = "src/index.js"
+compatibility_date = "2026-11-24"
+
+[assets]
+directory = "./public"
+binding = "ASSETS"
+
+[vars]
+ACCESS_TEAM_DOMAIN = "https://YOUR-TEAM.cloudflareaccess.com"
+ACCESS_AUD = "YOUR_CLOUDFLARE_ACCESS_APPLICATION_AUD"
+GITHUB_OWNER = "YOUR_GITHUB_USERNAME"
+GITHUB_REPO = "model-vault-storage"
+MAX_UPLOAD_MB = "20"
