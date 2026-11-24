@@ -1,0 +1,16 @@
+name = "model-gallery"
+main = "src/index.js"
+compatibility_date = "2026-11-24"
+
+[assets]
+directory = "./public"
+binding = "ASSETS"
+
+[[r2_buckets]]
+binding = "MODELS"
+bucket_name = "REPLACE_WITH_YOUR_R2_BUCKET_NAME"
+
+[vars]
+ACCESS_TEAM_DOMAIN = "https://REPLACE_WITH_YOUR_TEAM.cloudflareaccess.com"
+ACCESS_AUD = "REPLACE_WITH_YOUR_ACCESS_APPLICATION_AUD"
+MAX_UPLOAD_MB = "100"
